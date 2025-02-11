@@ -15,7 +15,6 @@ interface Restaurant {
   cuisine: string;
   location: string;
   rating: number;
-  imageUrl: string;
   coordinates: Coordinates;
 }
 
@@ -97,7 +96,6 @@ const RestaurantCard: React.FC<Restaurant & {
   cuisine,
   location,
   rating,
-  imageUrl,
   onMouseEnter,
   onMouseLeave,
   onClick,
@@ -271,7 +269,6 @@ const App: React.FC = () => {
       cuisine: 'Asian',
       location: 'Apgujeong, Seoul, South Korea',
       rating: 4.5,
-      imageUrl: '/api/placeholder/400/300',
       coordinates: { lat: 37.5265, lng: 127.0385 }
     },
     {
@@ -279,7 +276,6 @@ const App: React.FC = () => {
       cuisine: 'Italian',
       location: 'Apgujeong, Seoul, South Korea',
       rating: 4.5,
-      imageUrl: '/api/placeholder/400/300',
       coordinates: { lat: 37.5275, lng: 127.0395 }
     },
     {
@@ -287,7 +283,6 @@ const App: React.FC = () => {
       cuisine: 'American',
       location: 'Apgujeong, Seoul, South Korea',
       rating: 4.5,
-      imageUrl: '/api/placeholder/400/300',
       coordinates: { lat: 37.5285, lng: 127.0375 }
     },
     {
@@ -295,7 +290,6 @@ const App: React.FC = () => {
       cuisine: 'Asian',
       location: 'Apgujeong, Seoul, South Korea',
       rating: 4.5,
-      imageUrl: '/api/placeholder/400/300',
       coordinates: { lat: 37.5255, lng: 127.0365 }
     },
     {
@@ -303,7 +297,6 @@ const App: React.FC = () => {
       cuisine: 'Korean',
       location: 'Apgujeong, Seoul, South Korea',
       rating: 4.7,
-      imageUrl: '/api/placeholder/400/300',
       coordinates: { lat: 37.5245, lng: 127.0355 }
     },
     {
@@ -311,7 +304,6 @@ const App: React.FC = () => {
       cuisine: 'Italian',
       location: 'Apgujeong, Seoul, South Korea',
       rating: 4.6,
-      imageUrl: '/api/placeholder/400/300',
       coordinates: { lat: 37.5235, lng: 127.0345 }
     }
   ];
