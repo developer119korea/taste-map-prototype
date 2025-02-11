@@ -90,7 +90,7 @@ const RestaurantCard: React.FC<Restaurant & {
   onMouseEnter?: () => void; 
   onMouseLeave?: () => void;
   onClick?: () => void;
-  index?: number;
+  index: number;
 }> = ({
   name,
   cuisine,
@@ -107,7 +107,7 @@ const RestaurantCard: React.FC<Restaurant & {
     onMouseLeave={onMouseLeave}
     onClick={onClick}
   >
-    <img src={`/src/img/${Number(index)+1}.jpg`} alt={name} className="w-full h-48 object-cover"/>
+    <img src={`https://picsum.photos/seed/food-${index+1}/300/200`} alt={name} className="w-full h-48 object-cover"/>
     <button className="absolute top-4 right-4 p-2 bg-white rounded-full shadow-md">
       <Heart size={20} className="text-gray-600" />
     </button>
